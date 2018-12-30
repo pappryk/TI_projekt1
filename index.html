@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patryk Nguyen - Projekt 1</title>
+    <meta charset="UTF-8">
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+
+<body>
+    <nav>
+        <a href="#" onclick="showHome()">Strona główna</a>
+        <a href="#" onclick="showSimulation()">Symulacja</a>
+    </nav>
+    <div id="simulation" style="display:none;">
+        <div class="grid">
+            <canvas id="canvas" width="1500" height="1000"></canvas> 
+            <div>
+                <h3>Dzień: <output id="time"></output></h3>            
+                <div>
+                    <button onclick="start()">Start</button>
+                    <button onclick="stop()">Stop</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="home" style="text-align:center;">
+        <h1>Projekt 1 - Patryk Nguyen</h1>
+        <p>Mój projekt przedstawia symulację Układu Słonecznego (pierwszych pięciu planet).</p>
+        <p>Proporcje wielkości planet oraz odległości są zachowane w miarę możliwości, a <strong>1 sekunda to 10 dni.</strong> </p>
+        <p>Zakładam, że rok ma 365 dni.</p>
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/KZzdwT4mZJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+</body>
+<script>
+    main();
+</script>
+</html>
